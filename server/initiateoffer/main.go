@@ -21,7 +21,7 @@ func main() {
 				"body": "Take 10 off any [product or service] from now until the end of the month!",
 				"image"  : "https://www.giving.sg/image/logo?img_id=35892708g"
 			},
-			"token" : "fQpqailI8VNADGRaTQKSOz:APA91bGi1kZNga-iC4fnCwm6JCExll0l5D3q1QMWG3OycOM6-1ZWUMcf5rcNjJHqVTkP5dEDaX5wpprnvOWqTvyyqlNws_agE-WQCMWYSn3T9ddOw3QboVWav3HOX-uFxMV0FszQ39LR",
+			"token" : "ff2PwqPTRyKgKHEEC714g2:APA91bH5l9VynJ1CF9fr0OcQec48U2L8ZQrHlVQI28DQ6Bo7ahXcH_mWalj71HUHHdsBmOP-9XlpWPAqMBD9WTAHglikZRcOxHx5Pbh23_q8-4oAlIEztohUFDOvh-csu5Vznw4NWU8T",
      		"webpush":{
        			"headers":{
          			"image":"https://www.giving.sg/image/logo?img_id=35892708g"
