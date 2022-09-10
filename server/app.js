@@ -8,7 +8,8 @@ app.use(express.static(htmlPath));
 
 var server = app.listen(3000, function () {
     var host = 'localhost';
-    var port = server.address().port;
-    console.log('listening on http://'+host+':'+port+'/');
+    var server = app.listen(process.env.PORT || 8080, () => {
+        console.log('Server is started on 127.0.0.1:'+ (process.env.PORT || 8080))
+    })
 });
 
