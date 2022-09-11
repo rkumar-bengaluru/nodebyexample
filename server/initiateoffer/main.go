@@ -12,17 +12,17 @@ import (
 func main() {
 	// req url
 	reqUrl, _ := url.Parse("https://fcm.googleapis.com/v1/projects/zuellingpharma/messages:send")
-	// create request body
+	// create request body , replace device token
 	reqBody := ioutil.NopCloser(strings.NewReader(`
 	{
 		"message": {
 			"notification": {
 				"title": "Zuelling Pharma September Offer",
-				"body": "Take 10 off any [product or service] from now until the end of the month!",
+				"body": "Take 10% off any [product or service] from now until the end of the month!",
 				"image"  : "https://www.giving.sg/image/logo?img_id=35892708g"
 			},
-			"token" : "ff2PwqPTRyKgKHEEC714g2:APA91bH5l9VynJ1CF9fr0OcQec48U2L8ZQrHlVQI28DQ6Bo7ahXcH_mWalj71HUHHdsBmOP-9XlpWPAqMBD9WTAHglikZRcOxHx5Pbh23_q8-4oAlIEztohUFDOvh-csu5Vznw4NWU8T",
-     		"webpush":{
+			"token" : "dnGZsLe9xwQKp1VhzDHvvR:APA91bHuKVsYBleR5QGlt2kQsaAavLc2eFFfGsBu-2-r_ly6OHrjaU4QUb61pJ2-ieDBoY__ao9PKSqpdaD7AVZGx4ItrS5QbmUH2lXVPtWkNMZ2TDbV-nqX9NJAfc0qDFDVSK8UWr7N",
+			"webpush":{
        			"headers":{
          			"image":"https://www.giving.sg/image/logo?img_id=35892708g"
        			}
@@ -34,13 +34,13 @@ func main() {
 			}
 		} 
 	}`))
-	// create request object
+	// create request object & replace oath2 token from https://developers.google.com/oauthplayground/
 	req := &http.Request{
 		Method: "POST",
 		URL:    reqUrl,
 		Header: map[string][]string{
 			"Content-Type":  {"application/json"},
-			"Authorization": {" Bearer ya29.a0AVA9y1uldvZ-kZLVa9imbC2OYTMo6WHMyOIdtLhwKZUG9c7gzFP92N012twTZux2sIIGVjJJDxLG6wd_a7gGpDo4eVpgNIVdZf-I1DXG1iKk0DIO4qYG1drCOQWYS9PHqkePtAu02QQhfQx2uyQcuClSzE2BaCgYKATASARMSFQE65dr8IV_9Oo9BpoBBgNqXASyWmQ0163"},
+			"Authorization": {" Bearer ya29.a0AVA9y1vSI7qQevpm9LRBpX1sP5-87rBsrF2lC5UHWl7xe7kgXAdQBQTyIV_3cno34xHBELXSaPCOgPcD7ElQ6qZeaLLxmfv_Sx3woCZvUdO1FdFyGGIl5chLhhCFfJ8Ns4OTHl--TjttAqS7h7tIfgoyZlOxaCgYKATASARISFQE65dr8r3aQ2jzm3UYwbpFNcyQOHw0163"},
 		},
 		Body: reqBody,
 	}
