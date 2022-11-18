@@ -19,7 +19,7 @@ func main() {
 			"notification": {
 				"title": "Zuelling Pharma September Offer",
 				"body": "Take 10% off any [product or service] from now until the end of the month!",
-				"image"  : "https://www.giving.sg/image/logo?img_id=35892708g"
+				"image"  : "https://i.pinimg.com/564x/42/74/ea/4274ea8796f9e86ff4c42a249d9c7a89.jpg"
 			},
 			"token" : "dnGZsLe9xwQKp1VhzDHvvR:APA91bHuKVsYBleR5QGlt2kQsaAavLc2eFFfGsBu-2-r_ly6OHrjaU4QUb61pJ2-ieDBoY__ao9PKSqpdaD7AVZGx4ItrS5QbmUH2lXVPtWkNMZ2TDbV-nqX9NJAfc0qDFDVSK8UWr7N",
 			"webpush":{
